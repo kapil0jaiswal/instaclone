@@ -15,9 +15,14 @@ body{
     background-color: white;
     width: 100vw;
 }
+.logo{
+    margin-top: 20px;
+    margin-left: -100px;
+}
 .searchinput{
     height: 30px;
     width: 300px;
+    margin-top: 10px;
     border: 1px solid grey;
 }
 .searchinput:focus{
@@ -40,7 +45,7 @@ body{
     margin-left: 10px;
 }
 .container{
-    padding: 0 300px;
+    padding: 0 15vw;
     display: flex;
     justify-content: space-between;
 }
@@ -48,11 +53,15 @@ body{
     position: fixed;
     border: 1px solid black;
     margin-top: 50px;
-    margin-left: 40vw;
+    margin-left: 50%;
 }
 .profiledp{
 border-radius: 50%;
 padding: 5px;
+}
+.profiletag{
+    display: flex;
+    justify-content: left;
 }
 .profile{
 display: flex;
@@ -64,6 +73,10 @@ border: 1px solid black;
 padding-left: 10px;
  font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
+.id-name{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+
+}
 .profile-name{
 margin-top: -10px;
 color: grey;
@@ -72,13 +85,56 @@ color: grey;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
  color: grey;
 }
+.post-heading{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+.dots{
+    margin-top: -20px ;
+}
 .post{
-    height: 700px;
-    width: 600px;
+    width: 35vw;
     border: 2px solid grey;
     margin-top: 50px;
 }
+.post-img{
+    width: 600px;
+    object-fit: cover;
+}
 /* media queries */
+@media only screen and (max-width: 1024px) {
+   
+    #header{
+        padding: 0px;
+    }
+    .container{
+       padding: 10px;
+   }
+   .post{
+       width: 55vw;
+   }
+   .post-img{
+    width: 565px;
+    object-fit: cover;
+}
+   .profile-detail{
+       margin-left: 60%;
+   }
+
+  }
+@media only screen and (max-width: 968px) {
+    body {
+      background-color: lightblue;
+    }
+    .profile-detail{
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
     .searchinput{
